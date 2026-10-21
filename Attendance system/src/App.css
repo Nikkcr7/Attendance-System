@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #172554;
+}
+
+button {
+  cursor: pointer;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 8px 30px #0001;
+}
+
+.login-card h1,
+.login-card p {
+  text-align: center;
+}
+
+.login-card h1 {
+  color: #2563eb;
+}
+
+.login-card button {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.hint {
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 18px;
+}
+
+.dashboard {
+  padding: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+header h2 {
+  margin-bottom: 6px;
+  color: #2563eb;
+}
+
+header span {
+  color: #64748b;
+}
+
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.dashboard-button {
+  background: white;
+  color: #1e40af;
+  border: 1px solid #dbeafe;
+}
+
+.dashboard-button.active,
+.dashboard-button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.content {
+  min-height: 300px;
+  padding: 24px;
+  margin-top: 20px;
+  overflow-x: auto;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 18px #00000008;
+}
+
+.student-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 850px;
+}
+
+.student-form button {
+  align-self: start;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(130px, 1fr));
+  gap: 12px;
+}
+
+table {
+  width: 100%;
+  min-width: 550px;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+th {
+  background: #eff6ff;
+}
+
+a {
+  color: #2563eb;
+}
+
+@media (max-width: 650px) {
+  .student-form,
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+    padding: 12px;
+  }
+
+  .content {
+    padding: 14px;
+  }
+}
